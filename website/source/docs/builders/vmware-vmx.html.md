@@ -71,6 +71,9 @@ builder.
     five seconds and one minute 30 seconds, respectively. If this isn't
     specified, the default is 10 seconds.
 
+*   `enable_vnc` (bool) - Whether to create a VNC connection or not. Defaults
+    to `true`. A `boot_command` cannot be used when this is `false`.
+
 -   `floppy_files` (array of strings) - A list of files to place onto a floppy
     disk that is attached when the VM is booted. This is most useful for
     unattended Windows installs, which look for an `Autounattend.xml` file on
